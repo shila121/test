@@ -4,12 +4,12 @@ jobs:
   test_regression_model:
   working_directory: ~/project
   docker:
-    -image :circleci/python:3.7.2
+    -image: circleci/python:3.7.2
   steps:
-    -checkout
-    -run:
+    - checkout 
+    - run:
       name: Running tests
-      Command: |
+      Command: | 
         virtualenv venv
         . venv/bin/activate
         pip install --upgrade pip
