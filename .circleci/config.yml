@@ -9,7 +9,7 @@ jobs:
     - checkout 
     - run:
       name: Running tests
-      Command: | 
+      command: | 
         virtualenv venv
         . venv/bin/activate
         pip install --upgrade pip
